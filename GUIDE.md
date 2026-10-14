@@ -211,7 +211,7 @@ hàm reward(completion, gt_boxes):
 
 Viết **test cho reward trước khi chạy GRPO** (hoàn hảo, JSON hỏng, sai lớp, thừa box, rỗng). Hàm reward là Python thuần nên test được mà không cần GPU.
 
-GRPO: khởi tạo từ adapter tốt nhất, `num_generations=4`, `max_completion_length=128`, khoảng 60 bước, `use_vllm=False`. Dùng `trl.GRPOTrainer` (đã ghim `trl==1.9.2`; hãy đọc docs của đúng phiên bản này).
+GRPO: khởi tạo từ adapter tốt nhất, `num_generations=4`, `max_completion_length=128`, khoảng 60 bước, `use_vllm=False`. Nếu làm E5, cài `trl==1.9.2` và dùng `trl.GRPOTrainer` (hãy đọc docs của đúng phiên bản này).
 
 **Câu hỏi:** có dấu hiệu reward hacking không (model trả `[]` hoặc một box khổng lồ)? So với SFT, F1 thay đổi thế nào và có vượt CI95 không?
 
