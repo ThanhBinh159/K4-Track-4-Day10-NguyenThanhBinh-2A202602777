@@ -1,0 +1,10 @@
+{
+  "selected_by": "validation subset of 40 images",
+  "best_setup": "e3",
+  "val_f1": {
+    "e1": 0.1914893617021277,
+    "e2": 0.3043478260869565,
+    "e3": 0.34871794871794876
+  },
+  "reused_test_f1": 0.415929203539823
+}
